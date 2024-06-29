@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'league spartan', sans-serif;
+}
+
+:root{
+    --dk-voilet : hsl(268,75% ,9%);
+    --it-voilet : hsl(268,47% ,21%);
+    --it-voilet : hsl(281,89% ,26%);
+    --vb-voilet : hsl(285,91% ,52%);
+    --vb-voilet2 : hsl(290,70% ,36%);
+    --vb-yellow : hsl(52,100% ,62%);
+    --pl-white : hsl(0,0% ,100%);
+    --vb-cyan : hsl(176,100% ,44%);
+    --vb-cyan2 : hsl(177,92% ,70%);
+    --dk-text : hsl(198,20% ,13%);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(191,148,233,1) 100%);
+}
+h1{
+    color :hsl(210, 58%, 45%);
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.display-container{
+    position: relative;
+    background-color: var(--dk-voilet);
+    border-radius: 1rem;
+    border-bottom: 0.35 solid var(--vb-voilet2);
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 0.35rem solid var(--vb-voilet2);
+}
+.display{
+    width: 100%;
+    background-color: transparent;
+    padding: 1.15rem 1rem;
+    color : yellow;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+    
+}
+.display::placeholder {
+    position: absolute;
+    
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: var(--vb-yellow);
+    opacity: 0.65;
+    text-transform: uppercase;
+    
+
+}
+
+.display-container button{
+     position: absolute;
+     top: 50%;
+     right: 1.5rem;
+     transform: translateY(-50%);
+}
+
+.input-container{
+    width: 28%;
+    background-color: var(--dk-voilet);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid var(--vb-voilet2);
+}
+
+.length-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.length-container p:nth-child(1){
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    
+}
+
+.length-container p:nth-child(2){
+    color: yellow;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+    text-decoration-color: aliceblue;
+}
+
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: aqua;
+}

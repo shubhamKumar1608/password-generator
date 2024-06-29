@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="www.//fonts.goggleapis.com"/>
+    <link rel="preconnect" href="www.//fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="www.//font.goggleapis.com"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1> 
+        <div class="display-container">
+            <input readonly placeholder="password" class="display" data-passworddisplay>
+            <button>
+                <span data-copymsg></span>
+                <img src="download (4).png" alt="copy" height="20px" width="20px">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>password length</p>
+                <p data-lengthnumber>0</p>
+            </div>
+            <div class="slider-container">
+                <input type="range" class="slider" min="0" max="20" step="1" data-lengthslider>
+                <label for="slider">length</label>  
+            </div>
+            <div>
+                <input type="checkbox" name="" id="uppercase">
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="lowercase">
+                <label for="lowercase">Include lowercase</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="Number">
+                <label for="Number">Include number</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="Symbol">
+                <label for="Symbol">Include symbol</label>
+            </div>
+            <div class="strength-container">
+                <p>Strength</p>
+                <div class="indicator" data-indicator>
+
+
+                </div>
+            </div>
+            <div class="generate-container">
+                <button class="generate-password">Generate password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
